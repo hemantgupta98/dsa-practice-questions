@@ -1,0 +1,14 @@
+# print all prime number from 1 to n
+
+a = int(input("Enter your number : "))
+
+for num in range(2, a + 1):
+      isPrime = True
+
+      for i in range(2 , int(num ** 0.5)+1):
+            if (num % i == 0):
+                  isPrime = False
+                  break
+
+      if isPrime:
+            print(num, end=" ")      
